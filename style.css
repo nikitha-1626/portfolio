@@ -13,7 +13,9 @@ nav a {
   text-decoration: none;
   color: blue;
 }
-
+h2:hover {
+  color: blue;
+}
 nav a:hover {
   color: red;
 }
