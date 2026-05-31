@@ -1,11 +1,24 @@
 body {
   font-family: Arial;
-  text-align: center;
   background: #f4f4f4;
 }
 
+header {
+  background: #333;
+  color: white;
+  padding: 10px;
+}
 nav a {
   margin: 10px;
   text-decoration: none;
   color: blue;
+}
+
+nav a:hover {
+  color: red;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
 }

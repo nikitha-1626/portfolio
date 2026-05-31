@@ -7,22 +7,41 @@
 <body>
 
 <header>
-  <h1>Welcome to My Portfolio</h1>
+  <h1>Nikitha's Portfolio</h1>
 </header>
 
 <nav>
   <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Contact</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
 </nav>
 
-<section>
+<section id="about">
   <h2>About Me</h2>
-  <p>I am Nikitha ,learning Full Stack Web Development 🚀</p>
+  <p>I am Nikitha, learning Full Stack Development 🚀</p>
 </section>
 
-<button onclick="showMsg()">Click Me</button>
+<section id="skills">
+  <h2>My Skills</h2>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>PHP</li>
+  </ul>
+</section>
 
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required><br>
+    <input type="email" placeholder="Your Email" required><br>
+    <textarea placeholder="Your Message"></textarea><br>
+    <button type="submit">Send</button>
+  </form>
+</section>
+<button onclick="showMsg()">Click Me</button>
 <script src="script.js"></script>
 </body>
 </html>
