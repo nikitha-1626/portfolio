@@ -1,49 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Nikitha Portfolio</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
 
-<header>
-  <h1>Nikitha's Portfolio</h1>
-</header>
-<section class="hero">
-  <h1>Hello, I'm <span>Nikitha</span></h1>
-  <p>Aspiring Web Developer</p>
-  <button class="btn">View My Work</button>
-</section>
-
+<!-- NAVBAR -->
 <nav>
-  <a href="#">Home</a>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#contact">Contact</a>
+  <h2>Nikitha</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>I am Nikitha, learning Full Stack Development 🚀</p>
+<!-- HERO -->
+<section id="home" class="hero">
+  <h1>Hi, I'm Nikitha 👋</h1>
+  <p>Full Stack Web Developer</p>
+  <a href="#contact"><button>Contact Me</button></a>
 </section>
 
-<section>
+<!-- ABOUT -->
+<section id="about" class="fade">
+  <h2>About Me</h2>
+  <p>I am a passionate and dedicated Full Stack Web Development enthusiast currently pursuing my journey in building modern, responsive, and user-friendly web applications. I have a strong foundation in HTML, CSS, JavaScript, and am expanding my skills in PHP and MySQL to develop dynamic and data-driven websites. I enjoy turning ideas into real-world projects and continuously strive to improve my coding, problem-solving, and design skills. Through hands-on projects and internships, I aim to create impactful digital solutions and grow as a professional developer in the tech industry.</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="fade">
   <h2>My Skills</h2>
   <div class="skills">
-    <div class="skill-card">HTML</div>
-    <div class="skill-card">CSS</div>
-    <div class="skill-card">JavaScript</div>
+    <div class="card"><i class="fab fa-html5"></i> HTML</div>
+    <div class="card"><i class="fab fa-css3-alt"></i> CSS</div>
+    <div class="card"><i class="fab fa-js"></i> JavaScript</div>
+    <div class="card"><i class="fab fa-php"></i> PHP</div>
   </div>
 </section>
 
-<section id="contact">
+<!-- CONTACT -->
+<section id="contact" class="fade">
   <h2>Contact Me</h2>
-  <p>Email: example@gmail.com</p>
+  <form onsubmit="return validateForm()">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <button type="submit">Send Message</button>
+  </form>
 </section>
-<button onclick="showMsg()">Click Me</button>
-<script src="script.js"></script>
+
 <footer>
-  <p>© 2026 Nikitha Portfolio | All Rights Reserved</p>
+  <p>© 2026 Nikitha | Portfolio</p>
 </footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
